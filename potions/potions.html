@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Potions</title>
+    <link rel="stylesheet" href="../sub_pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+           <a href="../index.html#home">Home<span></span></a>
+           <a href="../index.html#cat">Arts<span></span></a>
+           <a href="../index.html#about">About<span></span></a>
+        </nav>
+   </header>
+    <section class="main_body" id="potion_home">
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="polyjuice_potion.jpg" alt="Polyjuice Potion">
+                </div>
+                <div class="back">
+                    <h1 class="title">Polyjuice Potion</h1>
+                    <p class="subtitle">A complex potion that allows the drinker to assume the form of someone else.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="veritaserum.jpg" alt="Veritaserum">
+                </div>
+                <div class="back">
+                    <h1 class="title">Veritaserum</h1>
+                    <p class="subtitle">A powerful truth serum that forces the drinker to reveal their deepest secrets.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="amortentia.jpg" alt="Amortentia">
+                </div>
+                <div class="back">
+                    <h1 class="title">Amortentia</h1>
+                    <p class="subtitle">The most powerful love potion in the world, with a distinctive and unique aroma for each person.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="felix_felicis.jpg" alt="Felix Felicis">
+                </div>
+                <div class="back">
+                    <h1 class="title">Felix Felicis</h1>
+                    <p class="subtitle">Also known as Liquid Luck, this potion brings extreme good luck to the drinker for a limited period of time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="wolfsbane.jpg" alt="Wolfsbane Potion">
+                </div>
+                <div class="back">
+                    <h1 class="title">Wolfsbane Potion</h1>
+                    <p class="subtitle">A potion that allows a werewolf to retain their human mind during the full moon, preventing them from harming others.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="draught_of_peace.jpg" alt="Draught of Peace">
+                </div>
+                <div class="back">
+                    <h1 class="title">Draught of Peace</h1>
+                    <p class="subtitle">A calming potion that relieves anxiety and agitation, promoting relaxation and tranquility.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="draught_of_living_death.jpg" alt="Draught of Living Death">
+                </div>
+                <div class="back">
+                    <h1 class="title">Draught of Living Death</h1>
+                    <p class="subtitle">A powerful sleeping potion that induces a deep and almost irreversible sleep in the drinker.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="potion_recepie.jpg" alt="Potion Recipe">
+                </div>
+                <div class="back">
+                    <h1 class="title">Potion Recipe</h1>
+                    <p class="subtitle">A parchment displaying the ingredients and steps required to brew a magical potion.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="potion_ingredients_market.jpg" alt="Potion Ingredients Market">
+                </div>
+                <div class="back">
+                    <h1 class="title">Potion Ingredients Market</h1>
+                    <p class="subtitle">A bustling marketplace where witches and wizards can purchase rare and exotic potion ingredients.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="potion_ingredients.jpg" alt="Potion Ingredients">
+                </div>
+                <div class="back">
+                    <h1 class="title">Potion Ingredients</h1>
+                    <p class="subtitle">Various magical components used in potion-making, ranging from herbs and roots to animal parts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="potion_class_scene.jpg" alt="Potion Class Scene">
+                </div>
+                <div class="back">
+                    <h1 class="title">Potion Class Scene</h1>
+                    <p class="subtitle">A scene depicting students learning potion-making in the Hogwarts classroom under the guidance of Professor Snape.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <img src="potion_accident.jpg" alt="Potion Accident">
+                </div>
+                <div class="back">
+                    <h1 class="title">Potion Accident</h1>
+                    <p class="subtitle">An unfortunate mishap in the potion-making process, resulting in unexpected and chaotic consequences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        } else {
+            entry.target.classList.remove('visible');
+        }
+    });
+});
+
+cards.forEach((card) => {
+    observer.observe(card);
+});
+</script>
+</html>
